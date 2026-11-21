@@ -20,6 +20,14 @@
 @media(max-width:760px){.page{width:calc(100% - 44px)}.intro{padding:28px 0 0}.intro-grid{grid-template-columns:minmax(0,1fr) 140px;gap:28px}.profile-portrait img{width:140px;height:160px}.intro h1{font-size:26px}.intro-copy p{font-size:13px}.contact-links{gap:5px 8px}.contact-sub{font-size:10px}.paper-card{grid-template-columns:160px minmax(0,1fr);gap:20px;padding:19px}.architecture-figure{height:105px}.paper-content h3{font-size:13px}.entry-heading{flex-wrap:wrap;gap:3px 12px}.news-list{padding-left:0}.awards-list{padding-left:0;padding-right:0}.experience-entry{padding-left:4px;padding-right:0}}
 @media(max-width:520px){.page{width:calc(100% - 36px)}.topline{padding-top:18px}.intro{padding-top:25px}.intro-grid{grid-template-columns:minmax(0,1fr) 96px;gap:14px 18px;align-items:start}.intro-copy{display:contents}.intro h1{grid-column:1/-1;text-align:left;font-size:27px;margin:0 0 6px;letter-spacing:-.03em}.intro-copy .intro-summary{grid-column:1;grid-row:2;font-size:12px;line-height:1.8;margin:0}.profile-portrait{grid-column:2;grid-row:2;align-self:start;padding-top:4px}.profile-portrait img{width:96px;height:118px;border-radius:6px;box-shadow:5px 5px 0 #f5effb}.profile-portrait figcaption{font-size:9px;margin-top:9px}.intro-copy .intro-detail{grid-column:1/-1;grid-row:3;font-size:12px;line-height:1.85;margin:0}.contact-links{grid-column:1/-1;grid-row:4;margin-top:0;padding-top:10px;gap:4px 9px;font-size:11px}.contact-links a{min-height:28px}.contact-sub{font-size:10px}.page-section{margin-top:30px}h2{font-size:22px;margin-bottom:16px}.news-list li{align-items:flex-start;font-size:11px;gap:8px;line-height:1.8;margin:8px 0}.news-date-badge{font-size:9px;line-height:1.5;margin-top:2px;padding:1px 4px}.section-note{font-size:11px;line-height:1.7}.tag-filter{justify-content:flex-start;gap:6px;margin:15px 0}.tag-btn{font-size:10px;padding:5px 10px;gap:6px}.tag-count{font-size:8px;min-width:14px;height:14px}.paper-card{grid-template-columns:1fr;gap:15px;padding:19px 17px}.paper-visual{width:100%;max-width:244px;justify-self:center}.architecture-figure{height:118px}.math-visual svg{height:125px}.figure-caption{font-size:8px;margin-top:7px}.paper-content h3{font-size:14px;line-height:1.5}.authors{font-size:10px;margin-top:6px}.paper-links{font-size:11px}.paper-description{font-size:12px}.venue{font-size:11px;margin-bottom:9px}.project-card{padding:16px}.project-card h3{font-size:13px}.project-card p{font-size:11px}.project-card .tech-stack{font-size:9px;line-height:1.8}.entry-heading{align-items:flex-start;flex-direction:column;gap:3px;margin-bottom:4px}.project-card .entry-heading{flex-direction:row;flex-wrap:wrap;gap:6px}.entry-heading time,.entry-date{font-size:9px;white-space:normal}.experience-entry{grid-template-columns:43px minmax(0,1fr);gap:15px;align-items:start;padding:12px 0}.institution-mark{width:43px;height:43px;margin-top:3px}.company-mark{padding:5px}.xiaohongshu-mark img{border-radius:6px}.university-mark{width:43px;height:43px}.entry-body h3{font-size:12px;line-height:1.6}.entry-body p{font-size:11px;line-height:1.8}.entry-body .role{font-size:10px}.awards-list li{font-size:11px;gap:15px;padding:7px 0}.awards-list time{font-size:10px}.site-footer{font-size:9px;margin-top:32px;padding-top:20px}.back-to-top{width:33px;height:33px;right:12px;bottom:16px}html[lang="zh-CN"] .intro-copy .intro-summary{line-height:1.95}html[lang="zh-CN"] .intro-copy .intro-detail{line-height:1.95}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+.workstation-project{display:grid;grid-template-columns:minmax(0, 34%) minmax(0, 1fr);column-gap:22px;align-items:center}
+.workstation-project video{grid-column:1;grid-row:1 / 3;display:block;width:100%;height:auto;aspect-ratio:16 / 9;border-radius:5px;background:#19171b}
+.workstation-project .entry-heading{grid-column:2;align-self:end;display:block}
+.workstation-project .project-details{grid-column:2;align-self:start;min-width:0}
+@media(max-width:620px){
+  .workstation-project{grid-template-columns:minmax(0,1fr);row-gap:9px}
+  .workstation-project .entry-heading,.workstation-project .project-details,.workstation-project video{grid-column:1;grid-row:auto}
+}
 </style>
 </head>
 <body>
@@ -109,6 +117,17 @@
 
     <section id="projects" class="page-section" aria-labelledby="projects-title">
       <h2 id="projects-title"><span lang="en">Projects</span><span lang="zh-CN">研究项目</span></h2>
+      <article class="project-card workstation-project" id="tianjin-hackathon" aria-labelledby="workstation-title">
+        <div class="entry-heading">
+          <h3 id="workstation-title"><span lang="en">Robotic Loading and Unloading for a Welding Workstation</span><span lang="zh-CN">焊接工作站机器人自动上下料</span></h3>
+          <p><strong><span lang="en">Tianjin Hackathon · Second Prize</span><span lang="zh-CN">天津黑客松 · 二等奖</span></strong></p>
+        </div>
+        <video controls playsinline preload="none" width="640" height="360" poster="tianjin-hackathon-poster.jpg" src="tianjin_hackathon_3x.mp4" aria-labelledby="workstation-title"></video>
+        <div class="project-details">
+          <p><span lang="en">YOLOv8 detects parts in a pile, and an Orbbec RGB-D camera locates them in 3D. AnyGrasp predicts zero-shot 6-DoF grasps. A ROS 2 state machine coordinates loading and unloading, using hand–eye calibration and coarse-to-fine inverse kinematics to align each part’s hole with the fixture pin.</span><span lang="zh-CN">用 YOLOv8 检测堆叠工件，结合奥比中光 RGB-D 相机定位，再用 AnyGrasp 零样本预测六自由度抓取位姿。ROS 2 状态机控制上下料流程，通过手眼标定和由粗到细的逆运动学对准工件孔与夹具定位销，完成插装。</span></p>
+          <p><a href="tianjin_hackathon_3x.mp4"><span lang="en">Watch demo (3× speed)</span><span lang="zh-CN">观看演示（3 倍速）</span></a></p>
+        </div>
+      </article>
       <div class="project-card">
         <div class="entry-heading"><h3><span lang="en">Visual Diffusion Policy for Robot Manipulation</span><span lang="zh-CN">视觉 Diffusion Policy 机器人操控系统</span></h3><time>09–10 / 2026</time></div>
         <p><span lang="en">A visual NutAssemblySquare manipulation pipeline with gated state-space memory for temporal conditioning.</span><span lang="zh-CN">搭建 NutAssemblySquare 视觉操控系统，引入门控状态空间记忆，增强策略的时序条件表征。</span></p>
